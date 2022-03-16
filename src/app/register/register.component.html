@@ -1,0 +1,108 @@
+<div class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 bg-primary">
+     
+</div>
+<br>
+<br>
+<br>
+<br>
+
+
+<section class="vh-100">
+    <div class="container-fluid h-custom">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-md-9 col-lg-6 col-xl-5">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp" class="img-fluid"
+            alt="Sample image">
+        </div>
+        <br>
+        <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+          <!-- Default form register -->
+          <form #f="ngForm" >
+            <div class="card o-hidden border-1 shadow-lg my-5">
+                <div class="card-body p-0">
+                    <!-- Nested Row within Card Body -->
+                       
+                            <div class="p-5">
+                                
+                                <h3>Register</h3>
+                                <div [hidden]="submitted">
+                                  <form (ngSubmit)="onSubmit()">
+                                    
+      
+                                    <div  class="form-group">
+                                      <label >Nom</label>
+                                       <input name="nom" placeholder="nom" type="text"
+                                        class="form-control" id="nom" required
+                                         [(ngModel)]="user.nomUser" #nom="ngModel" required minlength="3">
+                                    </div>
+                                  
+                                    <div class="alert alert-danger" *ngIf="nom.invalid && nom.touched">
+                                      <div *ngIf="nom.errors.required">Le nom est obligatoire</div>
+                                      <div *ngIf="nom.errors.minlength">minimum 3 lettre</div>
+                                  </div>
+                                <br>
+                                <div  class="form-group">
+                                  <label >Prenom</label>
+                                   <input name="prenom" placeholder="prenom" type="text"
+                                    class="form-control" id="prenom" required
+                                     [(ngModel)]="user.prenomUser" #prenom="ngModel" required minlength="3">
+                                </div>
+                                <div class="alert alert-danger" *ngIf="prenom.invalid && prenom.touched">
+                                  <div *ngIf="prenom.errors.required">Le prenom est obligatoire</div>
+                                  <div *ngIf="prenom.errors.minlength">minimum 3 lettre</div>
+                              </div>
+                              <br>
+                                <div  class="form-group">
+                                  <label >Adresse email </label>
+                                   <input name="email" placeholder="email" type="email"
+                                    class="form-control" id="email" required
+                                     [(ngModel)]="user.emailUser" #email="ngModel" required  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                                </div>
+                                <div class="alert alert-danger" *ngIf="email.invalid && email.touched">
+                                  <div *ngIf="email.errors.required">L'email'est obligatoire</div>
+                                  <div *ngIf="email.errors.pattern">L'adresse email doit etre valide</div>
+                              </div>
+      <br>
+                              <div  class="form-group">
+                                <label  >Mot de passe</label>
+                                 <input name="motDePasse" placeholder="Mot De passe" type="password"
+                                  class="form-control" id="passwordUser" required
+                                   [(ngModel)]="user.passwordUser" #passwordUser="ngModel" required>
+                              </div>
+                           
+                              
+            
+                        
+           <br>
+           
+           <br>
+      
+                                      <div>
+                                       
+                                        <button type="submit" class="btn btn-success" [disabled]="!f.valid">Enregistrer</button>                                      </div>
+                                    </form>
+                                  </div>
+                                  <div [hidden]="!submitted" >
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <h4>You submitted successfully!</h4>
+                                  </div>
+      </div>
+      
+      
+      </div>
+      </div>
+      </form>
+      <!-- Default form register -->
+        </div>
+      </div>
+    </div>
+    <br>
+<br>
+<br>
+<br>
+    <div class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 bg-primary">
+     
+    </div>
+  </section>
