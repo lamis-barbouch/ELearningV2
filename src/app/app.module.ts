@@ -15,6 +15,7 @@ import { ForbiddenComponent } from './forbidden/forbidden.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
+import { FormationAdminComponent } from './formation-admin/formation-admin.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { RouterModule } from '@angular/router';
     RegisterComponent,
     GestionFormateurComponent,
     EmailConfirmationComponent,
+    FormationAdminComponent,
   ],
   imports: [
     BrowserModule,
