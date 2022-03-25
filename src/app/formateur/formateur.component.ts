@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { FormationService } from '../_services/formation.service';
 
 @Component({
   selector: 'app-formateur',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormateurComponent implements OnInit {
 
-  constructor() { }
+  constructor(private formationService:FormationService,private router:Router) { }
 
   ngOnInit(): void {
+  }
+
+  getAllNotSeenNotif(cinUser:number){
+    this.formationService.getAllNotSeenNotif();
   }
 
 }

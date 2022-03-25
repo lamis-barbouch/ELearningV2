@@ -16,6 +16,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { FormationAdminComponent } from './formation-admin/formation-admin.component';
+import { HeaderApprenantComponent } from './header-apprenant/header-apprenant.component';
+import { FooterComponent } from './footer/footer.component';
+import { GestionProfileComponent } from './gestion-profile/gestion-profile.component';
+import { ApprenantComponent } from './apprenant/apprenant.component';
+import { DetailsFormationComponent } from './details-formation/details-formation.component';
+import { SuccessParticipeFormationComponent } from './success-participe-formation/success-participe-formation.component';
+import { HeaderFormateurComponent } from './header-formateur/header-formateur.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +37,13 @@ import { FormationAdminComponent } from './formation-admin/formation-admin.compo
     GestionFormateurComponent,
     EmailConfirmationComponent,
     FormationAdminComponent,
+    HeaderApprenantComponent,
+    FooterComponent,
+    GestionProfileComponent,
+    ApprenantComponent,
+    DetailsFormationComponent,
+    SuccessParticipeFormationComponent,
+    HeaderFormateurComponent,
   ],
   imports: [
     BrowserModule,

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Observable } from "rxjs";
 import { User } from 'src/models/user';
+
 import { UserAuthService } from '../_services/user-auth.service';
 import { UserService } from '../_services/user.service';
 
@@ -61,5 +62,6 @@ formateurDetails(cinUser:number){
     
  
    }
+    
 
 }
