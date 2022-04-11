@@ -1,14 +1,17 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { AddForumComponent } from './add-forum/add-forum.component';
 import { AdminComponent } from './admin/admin.component';
 import { ApprenantComponent } from './apprenant/apprenant.component';
 import { DetailsFormationComponent } from './details-formation/details-formation.component';
 import { EmailConfirmationComponent } from './email-confirmation/email-confirmation.component';
 import { ForbiddenComponent } from './forbidden/forbidden.component';
 import { FormateurComponent } from './formateur/formateur.component';
+import { ForumComponent } from './forum/forum.component';
 import { GestionFormateurComponent } from './gestion-formateur/gestion-formateur.component';
 import { GestionProfileComponent } from './gestion-profile/gestion-profile.component';
 import { HomeComponent } from './home/home.component';
+import { JitsiComponent } from './jitsi/jitsi.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { SuccessParticipeFormationComponent } from './success-participe-formation/success-participe-formation.component';
@@ -26,7 +29,10 @@ const routes: Routes = [
   {path:'profile',component:GestionProfileComponent},
   {path:'apprenant',component:ApprenantComponent},
   {path:'detailFormation/:idFormation',component:DetailsFormationComponent},
-  {path:'succesParticipeFormation',component:SuccessParticipeFormationComponent}
+  {path:'succesParticipeFormation',component:SuccessParticipeFormationComponent},
+  {path:'meet',component:JitsiComponent},
+  {path:'forum',component:ForumComponent},
+  {path:'addSubject',component:AddForumComponent},
 ];
 
 @NgModule({

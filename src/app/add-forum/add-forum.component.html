@@ -1,0 +1,38 @@
+<app-header-apprenant></app-header-apprenant>
+<br>
+<br>
+<br>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+<div id="contact" class="contact-area section-padding">
+    
+	<div class="container">										
+		<div class="section-title text-center">
+			<h1>Créer un nouveau sujet            </h1>
+		</div>					
+		<div class="row">
+				<div class="contact">
+					<form class="form" name="enq" method="post" action="contact.php" onsubmit="return validation();">
+						<div class="row">
+							<div class="form-group col-md-6">
+								<input type="text" name="name" class="form-control" placeholder="Nom" required="required">
+							</div>
+							<div class="form-group col-md-6">
+								<input type="email" name="email" class="form-control" placeholder="Email" required="required">
+							</div>
+							<div class="form-group col-md-12">
+								<input type="text" name="subject" class="form-control" placeholder="Titre" required="required">
+							</div>
+							<div class="form-group col-md-12">
+								<textarea rows="6" name="message" class="form-control" placeholder="Votre message" required="required"></textarea>
+							</div>
+							<div class="col-md-12 text-center">
+								<button type="submit" value="Send message" name="submit" id="submitButton" class="btn btn-contact-bg" title="Submit Your Message!">Ajouter</button>
+							</div>
+						</div>
+					</form>
+			</div><!--- END COL --> 
+			
+		</div><!--- END ROW -->
+	</div><!--- END CONTAINER -->	
+</div>

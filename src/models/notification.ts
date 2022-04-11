@@ -7,6 +7,7 @@ export class Notification {
     seen: number
     numberNotification:number;
     formateur:User;
+    i:number;
 
 
 

@@ -10,18 +10,33 @@ import { FormationService } from '../_services/formation.service';
 })
 export class HeaderFormateurComponent implements OnInit {
 notifications:Observable<Notification[]>;
+cinUser:number;
+i:number;
+
 
   constructor(private formationService:FormationService,private router:Router) { }
 
   ngOnInit(): void {
-    this.reloadData
+    this.cinUser=5;
+    this.reloadData();
   }
+  
 
   getAllNotSeenNotif(cinUser:number){
-    this.formationService.getAllNotSeenNotif();
+    this.cinUser=5;
+    this.formationService.getAllNotSeenNotif(this.cinUser);
   }
 
   reloadData() {
-   this.notifications=this.formationService.getAllNotSeenNotif();
+   this.notifications=this.formationService.getAllNotSeenNotif(this.cinUser);
+  }
+
+  seen(idNotif:number){
+    this.formationService.seenNotif(idNotif).subscribe(
+      data => {
+        console.log(data);
+        this.reloadData();
+      },
+      error => console.log(error));
   }
 }

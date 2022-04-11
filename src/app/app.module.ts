@@ -23,6 +23,9 @@ import { ApprenantComponent } from './apprenant/apprenant.component';
 import { DetailsFormationComponent } from './details-formation/details-formation.component';
 import { SuccessParticipeFormationComponent } from './success-participe-formation/success-participe-formation.component';
 import { HeaderFormateurComponent } from './header-formateur/header-formateur.component';
+import { JitsiComponent } from './jitsi/jitsi.component';
+import { ForumComponent } from './forum/forum.component';
+import { AddForumComponent } from './add-forum/add-forum.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +47,9 @@ import { HeaderFormateurComponent } from './header-formateur/header-formateur.co
     DetailsFormationComponent,
     SuccessParticipeFormationComponent,
     HeaderFormateurComponent,
+    JitsiComponent,
+    ForumComponent,
+    AddForumComponent,
   ],
   imports: [
     BrowserModule,
@@ -51,6 +57,7 @@ import { HeaderFormateurComponent } from './header-formateur/header-formateur.co
     AppRoutingModule,
     HttpClientModule,
     RouterModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

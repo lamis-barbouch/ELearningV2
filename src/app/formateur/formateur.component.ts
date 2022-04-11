@@ -14,8 +14,6 @@ export class FormateurComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  getAllNotSeenNotif(cinUser:number){
-    this.formationService.getAllNotSeenNotif();
-  }
+ 
 
 }

@@ -11,16 +11,20 @@ export class FormationService {
   private baseUrl='http://localhost:8084/formationLists';
   private baseUrl2='http://localhost:8084/participerFormation';
   private baseUrl3='http://localhost:8084/findbyIdFormation';
-  private baseUrl4='http://localhost:8084/getAllNotif'
-  
+  private baseUrl5='http://localhost:8084/getAllNotSeenNotif';
+  private baseUrl6='http://localhost:8084/seenNotif';
   user:User;
+  notif:Notification;
 
   constructor(private http: HttpClient) { }
 
 
-  getAllNotSeenNotif():Observable<any>{
-    return this.http.get(`${this.baseUrl4}`);}
+  getAllNotSeenNotif(cinUser:number):Observable<any>{
+    return this.http.get(`${this.baseUrl5}/${cinUser}`);}
   
+  
+  seenNotif(idNotif:number):Observable<any>{
+    return this.http.get(`${this.baseUrl6}/${idNotif}`);}
   
 
 
