@@ -26,6 +26,10 @@ import { HeaderFormateurComponent } from './header-formateur/header-formateur.co
 import { JitsiComponent } from './jitsi/jitsi.component';
 import { ForumComponent } from './forum/forum.component';
 import { AddForumComponent } from './add-forum/add-forum.component';
+import { ForumAdminComponent } from './forum-admin/forum-admin.component';
+import { DictionaireForumComponent } from './dictionaire-forum/dictionaire-forum.component';
+import { HeaderAdminComponent } from './header-admin/header-admin.component';
+import { ThankYouComponent } from './thank-you/thank-you.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +54,10 @@ import { AddForumComponent } from './add-forum/add-forum.component';
     JitsiComponent,
     ForumComponent,
     AddForumComponent,
+    ForumAdminComponent,
+    DictionaireForumComponent,
+    HeaderAdminComponent,
+    ThankYouComponent,
   ],
   imports: [
     BrowserModule,
@@ -57,6 +65,7 @@ import { AddForumComponent } from './add-forum/add-forum.component';
     AppRoutingModule,
     HttpClientModule,
     RouterModule,
+
     
   ],
   providers: [],
