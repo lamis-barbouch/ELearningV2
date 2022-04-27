@@ -16,6 +16,7 @@ import { HomeComponent } from './home/home.component';
 import { JitsiComponent } from './jitsi/jitsi.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { ResourcesComponent } from './resources/resources.component';
 import { SuccessParticipeFormationComponent } from './success-participe-formation/success-participe-formation.component';
 import { ThankYouComponent } from './thank-you/thank-you.component';
 
@@ -36,6 +37,7 @@ const routes: Routes = [
   {path:'meet',component:JitsiComponent},
   {path:'thank-you',component:ThankYouComponent},
   {path:'forum',component:ForumComponent},
+  {path:'cours',component:ResourcesComponent},
   {path:'addSubject',component:AddForumComponent},
   {path:'forumAdmin',component:ForumAdminComponent},
   {path:'dictionnaireForum',component:DictionaireForumComponent}

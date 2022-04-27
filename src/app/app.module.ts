@@ -30,6 +30,7 @@ import { ForumAdminComponent } from './forum-admin/forum-admin.component';
 import { DictionaireForumComponent } from './dictionaire-forum/dictionaire-forum.component';
 import { HeaderAdminComponent } from './header-admin/header-admin.component';
 import { ThankYouComponent } from './thank-you/thank-you.component';
+import { ResourcesComponent } from './resources/resources.component';
 
 @NgModule({
   declarations: [
@@ -58,6 +59,7 @@ import { ThankYouComponent } from './thank-you/thank-you.component';
     DictionaireForumComponent,
     HeaderAdminComponent,
     ThankYouComponent,
+    ResourcesComponent,
   ],
   imports: [
     BrowserModule,

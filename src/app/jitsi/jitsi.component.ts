@@ -1,6 +1,8 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 declare var JitsiMeetExternalAPI: any;
+
+
 @Component({
   selector: 'app-jitsi',
   templateUrl: './jitsi.component.html',
