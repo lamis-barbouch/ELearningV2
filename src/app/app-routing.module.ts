@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { AddForumComponent } from './add-forum/add-forum.component';
 import { AdminComponent } from './admin/admin.component';
 import { ApprenantComponent } from './apprenant/apprenant.component';
+import { ChatComponent } from './chat/chat.component';
 import { DetailsFormationComponent } from './details-formation/details-formation.component';
 import { DictionaireForumComponent } from './dictionaire-forum/dictionaire-forum.component';
 import { EmailConfirmationComponent } from './email-confirmation/email-confirmation.component';
@@ -17,6 +18,7 @@ import { JitsiComponent } from './jitsi/jitsi.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ResourcesComponent } from './resources/resources.component';
+import { ShowCategoryComponent } from './show-category/show-category.component';
 import { SuccessParticipeFormationComponent } from './success-participe-formation/success-participe-formation.component';
 import { ThankYouComponent } from './thank-you/thank-you.component';
 
@@ -40,7 +42,9 @@ const routes: Routes = [
   {path:'cours',component:ResourcesComponent},
   {path:'addSubject',component:AddForumComponent},
   {path:'forumAdmin',component:ForumAdminComponent},
-  {path:'dictionnaireForum',component:DictionaireForumComponent}
+  {path:'dictionnaireForum',component:DictionaireForumComponent},
+  {path:'categories',component:ShowCategoryComponent },
+  {path:'chat',component:ChatComponent}
 ];
 
 @NgModule({

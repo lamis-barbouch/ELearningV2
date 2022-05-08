@@ -31,6 +31,8 @@ import { DictionaireForumComponent } from './dictionaire-forum/dictionaire-forum
 import { HeaderAdminComponent } from './header-admin/header-admin.component';
 import { ThankYouComponent } from './thank-you/thank-you.component';
 import { ResourcesComponent } from './resources/resources.component';
+import { ChatComponent } from './chat/chat.component';
+import { ShowCategoryComponent } from './show-category/show-category.component';
 
 @NgModule({
   declarations: [
@@ -60,6 +62,8 @@ import { ResourcesComponent } from './resources/resources.component';
     HeaderAdminComponent,
     ThankYouComponent,
     ResourcesComponent,
+    ChatComponent,
+    ShowCategoryComponent
   ],
   imports: [
     BrowserModule,
@@ -67,6 +71,7 @@ import { ResourcesComponent } from './resources/resources.component';
     AppRoutingModule,
     HttpClientModule,
     RouterModule,
+    
 
     
   ],
