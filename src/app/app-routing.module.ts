@@ -13,19 +13,27 @@ import { ForumAdminComponent } from './forum-admin/forum-admin.component';
 import { ForumComponent } from './forum/forum.component';
 import { GestionFormateurComponent } from './gestion-formateur/gestion-formateur.component';
 import { GestionProfileComponent } from './gestion-profile/gestion-profile.component';
+import { AdminGuard } from './guard/admin.guard';
 import { HomeComponent } from './home/home.component';
 import { JitsiComponent } from './jitsi/jitsi.component';
+import { ListQuizComponent } from './list-quiz/list-quiz.component';
 import { LoginComponent } from './login/login.component';
+import { QuizFormateurComponent } from './quiz-formateur/quiz-formateur.component';
 import { RegisterComponent } from './register/register.component';
 import { ResourcesComponent } from './resources/resources.component';
 import { ShowCategoryComponent } from './show-category/show-category.component';
 import { SuccessParticipeFormationComponent } from './success-participe-formation/success-participe-formation.component';
 import { ThankYouComponent } from './thank-you/thank-you.component';
+import { UnauthorizedComponent } from './unauthorized/unauthorized.component';
+
 
 
 const routes: Routes = [
+  {path:'401',component:UnauthorizedComponent},
+  {path:'listQuiz',component:ListQuizComponent},
+  {path:'addQuiz',component:QuizFormateurComponent},
   {path:'home',component:HomeComponent},
-  {path:'admin',component:AdminComponent},
+  {path:'admin',component:AdminComponent,canActivate: [AdminGuard],},
   {path:'formateur',component:FormateurComponent},
   {path:'login',component:LoginComponent},
   {path:'forbidden',component:ForbiddenComponent},

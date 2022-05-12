@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Bienvenue Formateur</title>
+
+    <!-- Custom fonts for this template-->
+    <link src="../../assets/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link src="../../assets/css/sb-admin-2.min.css" rel="stylesheet">
+    
+</head>
+
+<body id="page-top" background="../../assets/img/19.jpg">
+    <app-header-formateur></app-header-formateur>
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Menu -->
+        <div class='dashboard'>
+           
+           
+            <div class='dashboard-content'>
+                <div class='container-fluid'>
+
+   <!-- Content Row -->
+   <div class="row">
+                
+    <!-- Content Column -->
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+</div>
+
+<div class="row">
+                
+    <!-- Content Column -->
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;
+<div class="col-lg-6 mb-4">
+
+        <!-- Forum -->
+        <div class="card shadow mb-4">
+            <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">Quiz</h6>
+            </div>
+                  
+                        <form #f="ngForm">
+                                  <!-- Nested Row within Card Body -->
+                                          <div class="p-5">
+                                              
+                                              
+                                              <div>
+                                                
+
+
+                                                <form (ngSubmit)="onSubmit()">
+
+
+                                                  <div  class="form-group">
+                                                    <label >Titre</label>
+                                                     <input name="title"  type="text"
+                                                      class="form-control" id="title" required
+                                                       [(ngModel)]="quiz.title" #title="ngModel" required >
+                                                  </div>
+                                                
+                                             
+                                              <br>
+                                              <div  class="form-group">
+                                                <label >Description</label>
+                                                 <textarea name="description"  type="text"
+                                                  class="form-control" id="description"  required
+                                                   [(ngModel)]="quiz.description" #description="ngModel" required></textarea>
+                                              </div>
+                                             
+                                            <br>
+                                             
+                                         
+                                            <br>
+                                            <div  class="form-group">
+                                              <label >Nombre de questions</label>
+                                               <input name="numberOfQuestion"  type="number"
+                                                class="form-control" id="numberOfQuestion" required
+                                                 [(ngModel)]="quiz.numberOfQuestion" #numberOfQuestion="ngModel" required  >
+                                            </div>
+
+                                            <div  class="form-group">
+                                                <label >Note maximale</label>
+                                                 <input name="maxMarks"  type="number"
+                                                  class="form-control" id="maxMarks" required
+                                                   [(ngModel)]="quiz.maxMarks" #maxMarks="ngModel" required  >
+                                              </div>
+                                          
+
+                                            
+<br>
+                                            <div class="form-group">
+                                              <label>Catégrie</label>
+                                              <br>
+                                              <select type="mat-select" name="category" type="text"
+                                                                                  class="form-control" id="category" required
+                                                                                   [(ngModel)]="quiz.category" #category="ngModel" >
+                                                                                  
+                                                                                  <option valeur="information">informatique</option>
+                                                                                  <option valeur="Maintenance informatique">Maintenance informatique</option>
+                                                                                  <option valeur="Systéme d'information">Systéme d'information</option>
+                                                                                  <option valeur="Réseaux">Réseaux</option>
+                                                                                  <option valeur="Programmation">Programmation</option>
+                                                                                  <option valeur="Conception">Conception</option>
+                                                                                  <option valeur="Autre">Autre</option>
+
+                                                                                </select>
+                                            </div>
+                    <br>
+                                            
+                                         
+                                            
+                          
+                                      
+                         <br>
+                         
+                         <br>
+                    
+                                                    <div>
+                                                     
+                                                      <button type="submit" class="btn btn-success" [disabled]="!f.valid">Enregistrer</button>                                      </div>
+                                                  </form>
+
+                                                </div>
+                                               
+                    </div>
+                    
+                    
+                    
+                    </form>
+        </div>
+
+        <!-- Approach -->
+       
+
+    </div>
+</div>
+
+       
+
+    </div>
+</div>
+
+
+                    
+
+                    </div>
+                    </div>

@@ -24,7 +24,16 @@ export class LoginComponent implements OnInit {
         this.userAuthService.setRoles(response.user.role);
         this.userAuthService.setToken(response.jwtToken);
         
+        
+        const token=response.jwtToken;
+        
        const role= response.user.role[0];
+       console.log(token);
+
+      this.userAuthService.setToken(token);
+      this.userAuthService.setRoles(role);
+      this.userAuthService.setRoleName(role.roleNom);
+
        if(role.roleNom === 'Admin'){
         this.router.navigate(['/admin']);
        }
@@ -37,5 +46,10 @@ export class LoginComponent implements OnInit {
       }
     );
   }
+
+
+  
+
+  
 
 }

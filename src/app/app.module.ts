@@ -33,6 +33,10 @@ import { ThankYouComponent } from './thank-you/thank-you.component';
 import { ResourcesComponent } from './resources/resources.component';
 import { ChatComponent } from './chat/chat.component';
 import { ShowCategoryComponent } from './show-category/show-category.component';
+import { MaterialModule } from './material/material.module';
+import { QuizFormateurComponent } from './quiz-formateur/quiz-formateur.component';
+import { ListQuizComponent } from './list-quiz/list-quiz.component';
+import { UnauthorizedComponent } from './unauthorized/unauthorized.component';
 
 @NgModule({
   declarations: [
@@ -63,7 +67,10 @@ import { ShowCategoryComponent } from './show-category/show-category.component';
     ThankYouComponent,
     ResourcesComponent,
     ChatComponent,
-    ShowCategoryComponent
+    ShowCategoryComponent,
+    QuizFormateurComponent,
+    ListQuizComponent,
+    UnauthorizedComponent
   ],
   imports: [
     BrowserModule,
@@ -71,6 +78,7 @@ import { ShowCategoryComponent } from './show-category/show-category.component';
     AppRoutingModule,
     HttpClientModule,
     RouterModule,
+    MaterialModule,
     
 
     
