@@ -18,6 +18,7 @@ import { HomeComponent } from './home/home.component';
 import { JitsiComponent } from './jitsi/jitsi.component';
 import { ListQuizComponent } from './list-quiz/list-quiz.component';
 import { LoginComponent } from './login/login.component';
+import { PaymentComponent } from './payment/payment.component';
 import { QuizFormateurComponent } from './quiz-formateur/quiz-formateur.component';
 import { RegisterComponent } from './register/register.component';
 import { ResourcesComponent } from './resources/resources.component';
@@ -52,7 +53,8 @@ const routes: Routes = [
   {path:'forumAdmin',component:ForumAdminComponent},
   {path:'dictionnaireForum',component:DictionaireForumComponent},
   {path:'categories',component:ShowCategoryComponent },
-  {path:'chat',component:ChatComponent}
+  {path:'chat',component:ChatComponent},
+  {path:'payment',component:PaymentComponent}
 ];
 
 @NgModule({

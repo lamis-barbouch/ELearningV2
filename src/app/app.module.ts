@@ -37,6 +37,7 @@ import { MaterialModule } from './material/material.module';
 import { QuizFormateurComponent } from './quiz-formateur/quiz-formateur.component';
 import { ListQuizComponent } from './list-quiz/list-quiz.component';
 import { UnauthorizedComponent } from './unauthorized/unauthorized.component';
+import { PaymentComponent } from './payment/payment.component';
 
 @NgModule({
   declarations: [
@@ -70,7 +71,8 @@ import { UnauthorizedComponent } from './unauthorized/unauthorized.component';
     ShowCategoryComponent,
     QuizFormateurComponent,
     ListQuizComponent,
-    UnauthorizedComponent
+    UnauthorizedComponent,
+    PaymentComponent
   ],
   imports: [
     BrowserModule,
